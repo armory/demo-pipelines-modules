@@ -1,0 +1,17 @@
+{
+  "defaultArtifact": {
+    "kind": "default.github",
+    "name": "{{ var "file" ?: "" }}",
+    "reference": "{{ var "reference" ?: "" }}",
+    "type": "github/file",
+    "version": "master"
+  },
+  "id": "{{ var "id" ?: "githubArtifact" }}",
+  "matchArtifact": {
+    "kind": "github",
+    "name": "{{ var "file" ?: "" }}",
+    "type": "github/file"
+  },
+  "useDefaultArtifact": true,
+  "usePriorExecution": false
+}

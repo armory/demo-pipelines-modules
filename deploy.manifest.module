@@ -1,0 +1,19 @@
+{
+  "account": "{{ var "account" ?: "" }}",
+  "cloudProvider": "kubernetes",
+  "manifestArtifactAccount": "{{ var "artifactAccount" ?: "github" }}",
+  "manifestArtifactId": "{{ var "artifactId" ?: "" }}",
+  "moniker": {
+    "app": "{{ var "app" ?: "" }}",
+    "cluster": "{{ var "cluster" ?: "" }}"
+  },
+  "name": "{{ var "name" ?: "" }}",
+  "refId": "{{ var "refId" ?: "" }}",
+  "relationships": {
+    "loadBalancers": [],
+    "securityGroups": []
+  },
+  "requisiteStageRefIds": {{ var "requisiteStageRefIds" ?: [] }},
+  "source": "artifact",
+  "type": "deployManifest"
+}
